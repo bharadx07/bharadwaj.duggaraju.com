@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 //CSS
-import "./css/styles.css"
+import "./css/globals.css"
 
 
 ReactDOM.render(
@@ -13,3 +13,4 @@ ReactDOM.render(
 );
 
 
+  
