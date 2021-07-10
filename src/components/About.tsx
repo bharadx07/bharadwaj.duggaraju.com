@@ -6,52 +6,53 @@ const AboutWrapper = styled.div`
     justify-content: center;
     margin-top: 20vh;
     width: 60%;
+    max-width: 900px;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
 `
 
-const LeftSide = styled.div``
+const LeftSide = styled.div`
+    width: 60%;
+`
 
 const RightImage = styled.img`margin: 0 2rem;`
 
 const AboutName = styled.h3`
-    border-bottom: 1px solid white;
     color: white;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     & sup {
         color: orange;
         font-weight: normal;
         margin: 0 .5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    padding-bottom: .7rem;
-    padding-right: 4rem;
-    width: 70%;
 `
 
 const ContentWrapper = styled.p`
     color: white;
     margin: 1rem 0;
     font-weight: 100;
+    font-size: 1.1rem;
     
 `
 
 const ToolBoxText = styled.h5`
-    color: white; 
+    color: #6B7B8C; 
     margin: .5rem 0;
-    font-weight: normal;
-    font-size: 1rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
 `
 
 const ToolBox = styled.div`
     display: flex;
+    font-size: 1.1rem;
 
     ul {
         margin: 0 .5rem;
-        color: white
+        color: #6B7B8C
     }
 
     ul li {
@@ -59,7 +60,7 @@ const ToolBox = styled.div`
     }
 
     ul li::before {
-        content: ">";
+        content: "▹";
         color: orange;
         margin: 0 .5rem;
 
@@ -70,7 +71,7 @@ const ToolBox = styled.div`
 
 const About: React.FC = () => {
     return (
-        <AboutWrapper>
+        <AboutWrapper id="about">
             <LeftSide>
                 <AboutName>
                     <sup>01.</sup> About Me
@@ -83,8 +84,7 @@ const About: React.FC = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.
                 </ContentWrapper>
                 <ToolBoxText>
-                    My Developer ToolBox :
-                </ToolBoxText>
+                    Daily Tech:             </ToolBoxText>
                 <ToolBox>
                 <ul>
                     <li>Javascript (ES6).</li>

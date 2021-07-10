@@ -12,25 +12,21 @@ const PassionsWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     align-items: center;
+    max-width:900px;
 `
 
 
 
 const PassionsName = styled.h3`
-    border-bottom: 1px solid white;
     color: white;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     & sup {
         color: orange;
         font-weight: normal;
         margin: 0 .5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-
-    padding-bottom: .7rem;
-    padding-right: 4rem;
-    width: 50%;
 `
 
 const ButtonsWrapper = styled.div`
@@ -51,18 +47,20 @@ const TopicButton = styled.button<{filled: boolean}>`
     color: white;
     border-radius: 0%;
     padding: .3rem .5rem;
+    font-weight: ${props => props.filled ? 'bold' : 'normal'};
     cursor: pointer;
     font-size: .9rem;
 `
 
 const ContentWrapper = styled.p`
     color: white;
-    margin: .4rem 0;
+    margin: .7rem 0;
     font-weight: 100;
     width: 53%;
+    font-size: 1.1rem;
 
     &::before {
-        content: ">";
+        content: "▹";
         color: orange;
         margin-right: .5rem;
 
@@ -80,7 +78,7 @@ const Passions: React.FC = () => {
 
     const tabContent = PassionsContent[tab]
     return (
-        <PassionsWrapper>
+        <PassionsWrapper id="passions">
             <div>
             <PassionsName><sup>02.</sup>Passions</PassionsName>
             <ButtonsWrapper>

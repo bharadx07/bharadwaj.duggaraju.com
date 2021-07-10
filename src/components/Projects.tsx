@@ -7,73 +7,127 @@ const ProjectsWrapper = styled.div`
     justify-content: center;
     margin-top: 15vh;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
 `
 
 const ProjectsName = styled.h3`
-    border-bottom: 1px solid white;
-    color: white;
+     color: white;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     & sup {
         color: orange;
         font-weight: normal;
         margin: 0 .5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-
-    padding-bottom: .7rem;
-    padding-right: 4rem;
-    width: 40%;
 `
 
 const ProjectItemsWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-gap: 1.1rem;
   margin-top: 2rem;
+  width: 30%;
 `
 
 const ProjectItem = styled.div`
     background-color: #4D6885;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.1);
     color: white;
-    padding: 1rem;
+    min-height: 200px;
+    min-width: 250px;
+    
+
     div {
+        padding: .6rem 1rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: .5rem;
+        justify-content: space-between;
+
+        i {
+            color: orange;
+            font-size: 1.5rem;
+        }
+
         div {
             display: flex;
+            i {
+                padding: 0 .2rem;
+                font-size: 1.2rem;
+                cursor: pointer;
+                color: white;
+            }
         }
+
     }
+
+    
+    h1 {
+            padding: 0 1rem;
+            font-size: 1.7rem;
+        }
+
+    p {
+        padding: .6rem 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    cursor: pointer;
+
+    
+  
+`
+
+const AllPButton = styled.a`
+margin-top: 2rem;
+    padding: 10px 13px;
+    border: 1px solid #EF9D10;
+    border-radius: 5px;
+    color: orange;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+
+    &:hover {
+        background-color: #EF9D10;
+        color: white;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 1rem;
+    }
+
+
 `
 
 const Projects: React.FC = () => {
     return (
         <ProjectsWrapper>
-            <ProjectsName><sup>03.</sup>Projects</ProjectsName>
+            <ProjectsName><sup>03.</sup>Notable Projects</ProjectsName>
             <ProjectItemsWrapper>
                 {TopProjects.map((project, ind) => {
                     return (
-                        <ProjectItem>
+                        <ProjectItem key={ind} {...project.webLink && {onClick: () => window.location.href = project.webLink as string}}>
                             <div>
                             <i className="fas fa-project-diagram"></i>
                                 <div>
-                                    <i className="fab fa-github" onClick={() => window.location.href = project.githubLink as string}/>
-                                    <i className="fab fa-chrome"  onClick={() => window.location.href = project.webLink as string}/>
+                                    {project.githubLink && <i className="fab fa-github" onClick={() => {window.location.href = project.githubLink as string}}/>}
+                                    {project.webLink && <i className="fab fa-chrome"  onClick={() => {window.location.href = project.webLink as string}}/>}
                                 </div>
                             </div>
-                            <h1>{project.title}</h1>
+                            <h1>{project.title}.</h1>
                                 <p>{project.desc}</p>
-                                {project.tech.map(tag => <div>{tag}</div>)}
+                             {/* <section>{project.tech.map(p => <div>{p}</div>)}</section> */}
                         </ProjectItem>
                     )
                 })}
             </ProjectItemsWrapper>
+            <AllPButton onClick={() => window.location.href = "https://github.com/bharadwajduggaraju"}>All Projects</AllPButton>
         </ProjectsWrapper>
     )
 }
