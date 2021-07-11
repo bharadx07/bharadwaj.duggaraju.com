@@ -10,13 +10,45 @@ const AboutWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     align-items: center;
+    min-width: 700px;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        min-width: 100%;
+        margin-top: 13rem;
+
+
+    
+    }
+
+  
 `
 
 const LeftSide = styled.div`
     width: 60%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        padding: 0 1rem;
+    }
 `
 
-const RightImage = styled.img`margin: 0 2rem;`
+const RightImage = styled.img`
+    margin: 0 2rem;
+    @media (max-width: 800px) {
+        width: 30%;
+        margin-top: 3rem;
+    }
+
+    @media (max-width: 500px) {
+        width: 44%;
+        margin-top: 3rem;
+    }
+
+
+
+ 
+`
 
 const AboutName = styled.h3`
     color: white;
@@ -29,6 +61,10 @@ const AboutName = styled.h3`
         font-size: 1.2rem;
     }
 
+    @media (max-width: 500px) {
+        font-size: 1.6rem;
+    }
+
 `
 
 const ContentWrapper = styled.p`
@@ -36,6 +72,10 @@ const ContentWrapper = styled.p`
     margin: 1rem 0;
     font-weight: 100;
     font-size: 1.1rem;
+
+    @media (max-width: 500px) {
+        font-size: 1rem;
+    }
     
 `
 
@@ -44,11 +84,20 @@ const ToolBoxText = styled.h5`
     margin: .5rem 0;
     font-weight: bolder;
     font-size: 1.3rem;
+
+    @media (max-width: 500px) {
+        font-size: 1.2rem;
+    }
 `
 
 const ToolBox = styled.div`
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1rem;
+
+    @media (max-width: 364px) {
+        font-size: .9rem;
+        flex-direction: column;
+    }
 
     ul {
         margin: 0 .5rem;

@@ -13,6 +13,12 @@ const PassionsWrapper = styled.div`
     margin-left: auto;
     align-items: center;
     max-width:900px;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+    
 `
 
 
@@ -21,11 +27,16 @@ const PassionsName = styled.h3`
     color: white;
     display: flex;
     font-size: 2.3rem;
+    text-align: center;
     & sup {
         color: orange;
         font-weight: normal;
         margin: 0 .5rem;
         font-size: 1.2rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 1.6rem;
     }
 `
 
@@ -34,9 +45,13 @@ const ButtonsWrapper = styled.div`
     margin-top: 1rem;
 
     & button:first-child {
-        margin: 0;
-        margin-right: .5rem;
+ 
     }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+
 `
 
 const TopicButton = styled.button<{filled: boolean}>`
@@ -56,7 +71,7 @@ const ContentWrapper = styled.p`
     color: white;
     margin: .7rem 0;
     font-weight: 100;
-    width: 53%;
+    width: 73%;
     font-size: 1.1rem;
 
     &::before {
@@ -65,7 +80,28 @@ const ContentWrapper = styled.p`
         margin-right: .5rem;
 
     }
+
+    @media (max-width: 700px) {
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
     
+`
+
+const TopicSelect = styled.select`
+    text-align: center;
+    margin: 1rem auto;
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    padding: 0.3rem 1.3rem;
+
+    @media (min-width: 600px) {
+        display: none;
+    }
 `
 
 const PassionsList: PassionT[] = ["Programming", "Volunteering", "Cubing", "Writing", "Badminton"]
@@ -86,11 +122,17 @@ const Passions: React.FC = () => {
                     return <TopicButton key={ind} filled={tab === passion} onClick={() => {setTab(passion)}}>{passion}</TopicButton>
                 })}
             </ButtonsWrapper>
+            <TopicSelect onChange={(e) => setTab(e.target.value as PassionT)}>
+            {PassionsList.map((passion, ind) => {
+                    return <option value={passion} key={ind}>{passion}</option>
+                })}
+            </TopicSelect> 
+
             </div>
             <br />
             {tabContent.map((tabContentItem: string, ind: number) => {
                 return (
-                    <ContentWrapper>
+                    <ContentWrapper key={ind}>
                         {tabContentItem}
                     </ContentWrapper>
                 )

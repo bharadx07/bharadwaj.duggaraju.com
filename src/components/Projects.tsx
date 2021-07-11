@@ -23,14 +23,23 @@ const ProjectsName = styled.h3`
         margin: 0 .5rem;
         font-size: 1.2rem;
     }
+    
+    @media (max-width: 500px) {
+        font-size: 1.6rem;
+    }
 `
 
 const ProjectItemsWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 1.1rem;
   margin-top: 2rem;
-  width: 30%;
+
+  @media (max-width: 300px) {
+      place-items: center;
+  }
+  
+ 
 `
 
 const ProjectItem = styled.div`
@@ -39,8 +48,16 @@ const ProjectItem = styled.div`
     box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.1);
     color: white;
     min-height: 200px;
-    min-width: 250px;
-    
+    min-width: 240px;
+
+    @media (max-width: 800px) {
+        margin: 0 1rem;
+    }
+
+    @media (max-width: 300px) {
+        margin: 0 2rem;
+    }
+
 
     div {
         padding: .6rem 1rem;
