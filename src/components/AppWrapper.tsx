@@ -1,8 +1,6 @@
 import {createGlobalStyle} from "styled-components"
 
-const AppWrapper = createGlobalStyle`
-    @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-
+const AppWrapperStyles = createGlobalStyle`
     * {
     margin: 0;
     padding: 0;
@@ -19,5 +17,14 @@ const AppWrapper = createGlobalStyle`
     }
 
 `
+
+const AppWrapper: React.FC = ({children}) => {
+    return (
+        <>
+            <AppWrapperStyles />
+            {children}
+        </>
+    )
+}
 
 export default AppWrapper

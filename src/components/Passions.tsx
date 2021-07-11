@@ -8,7 +8,7 @@ const PassionsWrapper = styled.div`
     justify-content: center;
     margin-top: 15vh;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -91,7 +91,7 @@ const ContentWrapper = styled.p`
 
 const TopicSelect = styled.select`
     text-align: center;
-    margin: 1rem auto;
+    margin: 1rem auto 0 auto;
     display: flex;
     border: none;
     outline: none;

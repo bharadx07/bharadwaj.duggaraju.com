@@ -8,6 +8,9 @@ import Passions from "./components/Passions"
 import Projects from "./components/Projects"
 import Intro from "./components/Intro"
 import SocialContacts from './components/SocialContacts';
+import AppWrapper from './components/AppWrapper';
+import {ThemeProvider} from "styled-components"
+import theme from "./content/theme"
 
 
 
@@ -15,7 +18,8 @@ function App(
 
 ) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <AppWrapper>
       <Navbar />
       <Intro />
       <SocialContacts />
@@ -24,7 +28,8 @@ function App(
       <Projects />
       <Contact />
       <Footer />
-    </> 
+    </AppWrapper>
+    </ThemeProvider> 
   );
 }
 
