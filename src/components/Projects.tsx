@@ -128,7 +128,7 @@ margin-top: 2rem;
 
 const Projects: React.FC = () => {
     return (
-        <ProjectsWrapper>
+        <ProjectsWrapper id="projects">
             <ProjectsName><sup>03.</sup>Notable Projects</ProjectsName>
             <ProjectItemsWrapper>
                 {TopProjects.map((project, ind) => {

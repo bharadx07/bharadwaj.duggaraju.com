@@ -68,12 +68,13 @@ const ContactText = styled.p`
 
 const Contact: React.FC = () => {
     return (
-        <ContactWrapper>
+        <ContactWrapper id="contact">
             <ContactName>
                 <sup>04.</sup>Contact
             </ContactName>
             <ContactText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul. 
+
+            Although I'm not currently looking for any new business inquiries feel free to email me. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </ContactText>
             <ContactBTN onClick={() => window.location.href="mailto:bharadwaj.duggaraju@outlook.com"}>
                 Get In Touch

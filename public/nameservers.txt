@@ -1,0 +1,13 @@
+Name server 1
+:
+ns1-08.azure-dns.com.
+Name server 2
+:
+ns2-08.azure-dns.net.
+Name server 3
+:
+ns3-08.azure-dns.org.
+Name server 4
+:
+ns4-08.azure-dns.info.
+Tags

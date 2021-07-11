@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 const NavWrapper = styled.header`
   padding: 0 2rem;
@@ -19,6 +19,7 @@ const NavBrand = styled.div`
   border-radius: 0px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `
 
 const Nav = styled.nav`
@@ -134,7 +135,7 @@ const Navbar: React.FC = () => {
     
       return (
         <NavWrapper>
-            <NavBrand>
+            <NavBrand onClick={() => window.location.href="#"}>
               <img src="/icon-white.svg" alt="BD"/>
             </NavBrand>
             <MenuIcon className="icon ion-md-menu menuicon"></MenuIcon>

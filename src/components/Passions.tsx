@@ -69,7 +69,7 @@ const TopicButton = styled.button<{filled: boolean}>`
 
 const ContentWrapper = styled.p`
     color: white;
-    margin: .7rem 0;
+    margin: .5rem 0;
     font-weight: 100;
     width: 56%;
     font-size: 1.1rem;

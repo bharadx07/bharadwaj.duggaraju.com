@@ -127,10 +127,10 @@ const About: React.FC = () => {
                 </AboutName>
 
                 <ContentWrapper>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                Hey! I'm Bharadwaj Duggaraju, a passionate student developer from Washington. I focus on building interactive UI's on the web, mobile,   and desktop. My interest in development started in 2016 through a scratch programming class.
                 </ContentWrapper>
                 <ContentWrapper>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.
+                Moving into the 9th grade, I have a strong focus on academics. When not programming, you'll find me solving Rubik Cubes, Volunteering, Writing, or playing Badminton. 
                 </ContentWrapper>
                 <ToolBoxText>
                     Daily Tech:             </ToolBoxText>
