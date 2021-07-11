@@ -87,7 +87,7 @@ const ContactButton = styled.a`
 
 const Intro: React.FC = () => {
     return (
-        <CenterWrapper>
+        <CenterWrapper className="animate__animated animate__fadeInDown">
             <div style={{marginLeft: "2rem"}}>
             <HeyWrapper>Hey!</HeyWrapper>
             <Name>I'm <span>Bharadwaj Duggaraju.</span></Name>

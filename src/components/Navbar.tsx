@@ -135,11 +135,11 @@ const Navbar: React.FC = () => {
     
       return (
         <NavWrapper>
-            <NavBrand onClick={() => window.location.href="#"}>
+            <NavBrand onClick={() => window.location.href="#"} className="animate__animated animate__fadeInDown">
               <img src="/icon-white.svg" alt="BD"/>
             </NavBrand>
             <MenuIcon className="icon ion-md-menu menuicon"></MenuIcon>
-            <Nav className="nav">
+            <Nav className="nav animate__animated animate__fadeInDown">
               <CloseIcon className="icon ion-md-close closeicon"></CloseIcon>
               <NavLink className="nav-link" href="#about">
                 <span>01.</span><BR /> About

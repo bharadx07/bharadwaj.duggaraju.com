@@ -32,7 +32,7 @@ const Socials = styled.div`
 
 const SocialContacts = () => {
     return (
-        <ContactWrapper>
+        <ContactWrapper className="animate__animated animate__fadeInLeft">
             <Socials>
             <i className="fab fa-github" onClick={() => window.location.href="https://github.com/bharadwajduggaraju"}></i>
             <i className="fab fa-facebook" onClick={() => window.location.href="https://facebook.com/bharadwajduggaraju"}></i>
