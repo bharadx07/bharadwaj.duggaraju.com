@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import { TopProjects } from '../content/projects';
 
 const ProjectsWrapper = styled.div`
@@ -31,7 +31,7 @@ const ProjectsName = styled.h3`
 
 const ProjectItemsWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 1.1rem;
   margin-top: 2rem;
 
@@ -42,7 +42,7 @@ const ProjectItemsWrapper = styled.section`
  
 `
 
-const ProjectItem = styled.div`
+const ProjectItem = styled.div<{sided: boolean}>`
     background-color: #4D6885;
     border-radius: 4px;
     box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.1);
@@ -50,7 +50,11 @@ const ProjectItem = styled.div`
     min-height: 200px;
     min-width: 240px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 720px) {
+        ${props => props.sided ? css`margin-left: 1rem;` : css`margin-right: 1rem;`}
+    }
+
+    @media (max-width: 593px) {
         margin: 0 1rem;
     }
 
@@ -129,7 +133,7 @@ const Projects: React.FC = () => {
             <ProjectItemsWrapper>
                 {TopProjects.map((project, ind) => {
                     return (
-                        <ProjectItem key={ind} {...project.webLink && {onClick: () => window.location.href = project.webLink as string}}>
+                        <ProjectItem key={ind} {...project.webLink && {onClick: () => window.location.href = project.webLink as string}} sided={ind%2 === 0}>
                             <div>
                             <i className="fas fa-project-diagram"></i>
                                 <div>

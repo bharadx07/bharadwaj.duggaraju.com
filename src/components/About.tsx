@@ -80,7 +80,7 @@ const ContentWrapper = styled.p`
 `
 
 const ToolBoxText = styled.h5`
-    color: #6B7B8C; 
+    color: white; 
     margin: .5rem 0;
     font-weight: bolder;
     font-size: 1.3rem;
@@ -101,7 +101,7 @@ const ToolBox = styled.div`
 
     ul {
         margin: 0 .5rem;
-        color: #6B7B8C
+        color: white
     }
 
     ul li {

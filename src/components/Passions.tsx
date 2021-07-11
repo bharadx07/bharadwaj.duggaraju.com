@@ -71,7 +71,7 @@ const ContentWrapper = styled.p`
     color: white;
     margin: .7rem 0;
     font-weight: 100;
-    width: 73%;
+    width: 56%;
     font-size: 1.1rem;
 
     &::before {
@@ -81,7 +81,17 @@ const ContentWrapper = styled.p`
 
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 1100px) {
+        width: 500px;
+    }
+
+    @media (max-width: 630px) {
+        width: 85%;
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 430px) {
         width: 100%;
         padding: 0 1rem;
         font-size: 1rem;
@@ -97,7 +107,8 @@ const TopicSelect = styled.select`
     outline: none;
     background-color: orange;
     color: white;
-    padding: 0.3rem 1.3rem;
+    width: 100%;
+    padding: 0.3rem 11.3vh;
 
     @media (min-width: 600px) {
         display: none;
@@ -130,6 +141,7 @@ const Passions: React.FC = () => {
 
             </div>
             <br />
+
             {tabContent.map((tabContentItem: string, ind: number) => {
                 return (
                     <ContentWrapper key={ind}>
