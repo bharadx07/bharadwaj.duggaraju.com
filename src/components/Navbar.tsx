@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 
 const NavWrapper = styled.header`
   padding: 0 2rem;
