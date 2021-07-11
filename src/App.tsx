@@ -8,7 +8,9 @@ import Passions from "./components/Passions"
 import Projects from "./components/Projects"
 import Intro from "./components/Intro"
 import SocialContacts from './components/SocialContacts';
+//Global Styles
 import AppWrapper from './components/AppWrapper';
+//Theme
 import {ThemeProvider} from "styled-components"
 import theme from "./content/theme"
 
