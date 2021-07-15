@@ -34,17 +34,18 @@ const LeftSide = styled.div`
 `
 
 const RightImage = styled.img`
-    margin: 0 2rem;
-    @media (max-width: 800px) {
-        width: 30%;
-        margin-top: 3rem;
+    margin: 3rem 2rem;
+    min-width: 210px;
+
+    @media(max-width: 700px) {
+       margin: 3rem 0;
     }
 
-    @media (max-width: 500px) {
-        width: 44%;
-        margin-top: 3rem;
-    }
 
+    @media(max-width: 490px) {
+        width: 40%;
+        min-width: 190px;
+    }
 
 
  
@@ -130,7 +131,7 @@ const About: React.FC = () => {
                 Hey! I'm <span onClick={() => window.location.href="#"} style={{color: "orange", cursor: "pointer"}}>Bharadwaj Duggaraju</span>, a passionate student developer from Washington. I focus on building interactive UI's on the web, mobile,   and desktop. My interest in development started in 2016 through a <span onClick={() => window.location.href="https://scratch.mit.edu"} style={{color: "orange", cursor: "pointer"}}>Scratch</span> programming class.
                 </ContentWrapper>
                 <ContentWrapper>
-                Moving into the 9th grade, I have a strong focus on academics. When not Programming, you'll find me solving Rubik Cubes, Volunteering, Writing, or playing Badminton. 
+                Moving into the 9th grade, I have a strong focus on academics. When not programming, you'll find me solving <span onClick={() => window.location.href="https://www.worldcubeassociation.org/persons/2017DUGG01"} style={{color: "orange", cursor: "pointer"}}>Rubik Cubes</span>, volunteering, writing, or playing badminton. 
                 </ContentWrapper>
                 <ToolBoxText>
                     Daily Tech:             </ToolBoxText>

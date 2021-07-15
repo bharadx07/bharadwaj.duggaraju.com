@@ -107,8 +107,8 @@ const TopicSelect = styled.select`
     outline: none;
     background-color: orange;
     color: white;
-    width: 100%;
-    padding: 0.3rem 11.3vh;
+    padding: .5rem .7rem;
+    
 
     @media (min-width: 600px) {
         display: none;
@@ -144,8 +144,7 @@ const Passions: React.FC = () => {
 
             {tabContent.map((tabContentItem: string, ind: number) => {
                 return (
-                    <ContentWrapper key={ind}>
-                        {tabContentItem}
+                    <ContentWrapper key={ind} dangerouslySetInnerHTML={{__html: tabContentItem}}>
                     </ContentWrapper>
                 )
             } )}
@@ -154,3 +153,5 @@ const Passions: React.FC = () => {
 }
 
 export default Passions
+
+

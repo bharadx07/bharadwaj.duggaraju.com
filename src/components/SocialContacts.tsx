@@ -7,7 +7,7 @@ const ContactWrapper = styled.div`
     bottom: 0;
     padding: 0 3rem;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1090px) {
         display: none;
     }
 `

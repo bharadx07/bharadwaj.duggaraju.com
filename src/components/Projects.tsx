@@ -71,14 +71,15 @@ const ProjectItem = styled.div<{sided: boolean}>`
 
         i {
             color: orange;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
+            padding-left: 0.2rem;
         }
 
         div {
             display: flex;
             i {
                 padding: 0 .2rem;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 cursor: pointer;
                 color: white;
             }
