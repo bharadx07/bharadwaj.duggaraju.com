@@ -103,11 +103,12 @@ const TopicSelect = styled.select`
     text-align: center;
     margin: 1rem auto 0 auto;
     display: flex;
-    border: none;
+    border: 1px solid ${props => props.theme.colors.specialText};
     outline: none;
-    background-color: orange;
-    color: white;
-    padding: .5rem .7rem;
+    background-color: ${props => props.theme.colors.bg};
+    color: ${props => props.theme.colors.mainText};
+    padding: .5rem 2rem;
+    text-align: center;
     
 
     @media (min-width: 600px) {

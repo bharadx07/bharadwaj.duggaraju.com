@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
             </ContactName>
             <ContactText>
 
-            Although I'm not currently looking for any new business inquiries feel free to email me. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            Although I'm not currently looking for any new business inquiries, feel free to email me. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </ContactText>
             <ContactBTN onClick={() => window.location.href="mailto:bharadwaj.duggaraju@outlook.com"}>
                 Get In Touch

@@ -20,8 +20,8 @@ function App(
 
 ) {
   return (
-    <ThemeProvider theme={theme}>
       <AppWrapper>
+      <ThemeProvider theme={theme}>
       <Navbar />
       <Intro />
       <SocialContacts />
@@ -30,8 +30,8 @@ function App(
       <Projects />
       <Contact />
       <Footer />
+      </ThemeProvider> 
     </AppWrapper>
-    </ThemeProvider> 
   );
 }
 
