@@ -7,7 +7,7 @@ const ContactWrapper = styled.div`
     bottom: 0;
     padding: 0 3rem;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1022px) {
         display: none;
     }
 `
@@ -37,7 +37,8 @@ const SocialContacts = () => {
             <i className="fab fa-github" onClick={() => window.location.href="https://github.com/bharadwajduggaraju"}></i>
             <i className="fab fa-facebook" onClick={() => window.location.href="https://facebook.com/bharadwajduggaraju"}></i>
             <i className="fab fa-instagram" style={{marginBottom: "1.9rem"}} onClick={() => window.location.href="https://instagram.com/bharadwaj_duggaraju"}></i>
-            {[0,1,2,3].map((_, ind: number) => (<i className="fas fa-grip-lines-vertical" style={{margin: "0"}} key={ind} onClick={() => window.location.href = "#"}></i>))}
+            <div title="Jump to top." style={{cursor: "pointer"}}>{"⬆"}</div>
+            {[0,1,2,3].map((_, ind: number) => (<i className="fas fa-grip-lines-vertical" title="Jump to top." style={{margin: "0"}} key={ind} onClick={() => window.location.href = "#"}></i>))} 
             </Socials>
         </ContactWrapper>
     )

@@ -10,6 +10,7 @@ const CenterWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 `
 
 const HeyWrapper = styled.h5`
@@ -31,8 +32,20 @@ const Name = styled.h1`
         color: orange;
     }
 
+    @media (max-width: 1000px) {
+        font-size: 60px;
+    }
+
     @media (max-width: 768px) {
         font-size: 50px;
+    }
+
+    @media (max-width: 638px) {
+        font-size: 7vw;
+    }
+
+    @media (max-width: 498px) {
+        font-size: 40px;
     }
 
     @media (max-width: 375px) {
@@ -40,9 +53,10 @@ const Name = styled.h1`
         margin: .5rem 0;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 300px) {
         font-size: 34px;
     }
+
 
     
 `
@@ -51,7 +65,7 @@ const AboutDesc = styled.p`
     color: #6B7B8C;
     font-size: 1.5rem;
     font-weight: bold;
-    width: 50%;
+    width: 60%;
     padding: 0 0 2.8rem 0;
 
     @media (max-width: 768px) {
@@ -91,7 +105,7 @@ const Intro: React.FC = () => {
             <div style={{marginLeft: "2rem"}}>
             <HeyWrapper>Hey!</HeyWrapper>
             <Name>I'm <span>Bharadwaj Duggaraju.</span></Name>
-            <AboutDesc>Being a passionate student developer, I enjoy making impactful projects on the web, mobile and real-life.</AboutDesc>
+            <AboutDesc>A passionate student developer who enjoys making impactful projects on the web, mobile and real-life.</AboutDesc>
             <ContactButton href="#contact">Contact Me</ContactButton>
             </div>
         </CenterWrapper>

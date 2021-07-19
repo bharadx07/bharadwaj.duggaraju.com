@@ -43,7 +43,7 @@ export const TopProjects: Project[] = [
         webLink: "http://bdvideos.glitch.me",
         githubLink: "https://github.com/bharadwajduggaraju/bdvideos",
         title: "BD Videos",
-        desc: "Video Watching Site Based of Youtube.",
+        desc: "Video Watching Site Based on Youtube.",
         tech: ["HTML", "CSS", "Javascript"]
     },
     {

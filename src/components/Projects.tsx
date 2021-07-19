@@ -47,20 +47,19 @@ const ProjectItem = styled.div<{sided: boolean}>`
     border-radius: 4px;
     box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.1);
     color: white;
-    min-height: 200px;
+    min-height: 160px;
     min-width: 240px;
 
     @media (max-width: 720px) {
         ${props => props.sided ? css`margin-left: 1rem;` : css`margin-right: 1rem;`}
     }
 
-    @media (max-width: 593px) {
-        margin: 0 1rem;
+    @media (max-width: 592px) {
+        margin: 0 2rem;
+        
     }
 
-    @media (max-width: 300px) {
-        margin: 0 2rem;
-    }
+
 
 
     div {
@@ -90,12 +89,12 @@ const ProjectItem = styled.div<{sided: boolean}>`
     
     h1 {
             padding: 0 1rem;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
 
     p {
         padding: .6rem 1rem;
-        padding-bottom: 1rem;
+        padding-bottom:1rem ;
         font-size: 1rem;
     }
 

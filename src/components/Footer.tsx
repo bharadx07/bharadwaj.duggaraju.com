@@ -22,7 +22,7 @@ const IconsOnSmall = styled.div`
 
      display: none;
 
-     @media (max-width: 1090px) {
+     @media (max-width: 1022px) {
         display: block;
     }
 `
