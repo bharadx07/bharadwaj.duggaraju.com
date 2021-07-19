@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const AboutWrapper = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: ${props => props.theme.spacing.lgbetween};
     width: 60%;
     max-width: 900px;
     margin-right: auto;
@@ -38,7 +38,7 @@ const RightImage = styled.img`
     min-width: 210px;
 
     @media(max-width: 700px) {
-       margin: 3rem 0;
+       margin-top: 3rem;
     }
 
 

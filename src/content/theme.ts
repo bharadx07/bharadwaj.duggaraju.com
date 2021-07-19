@@ -4,6 +4,11 @@ const theme = {
         mainText: "white",
         specialText: "orange",
         secText: "#6B7B8C"
+    },
+    spacing: {
+        between: "15vh",
+        smbetween: "10vh",
+        lgbetween: "20vh"
     }
 }
 

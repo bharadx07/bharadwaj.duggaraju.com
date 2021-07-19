@@ -5,8 +5,8 @@ const ContactWrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10vh;
-    width: 60%;
+    margin-top: ${props => props.theme.spacing.smbetween};;
+    width: 65%;
     max-width: 900px;
     margin-right: auto;
     margin-left: auto;

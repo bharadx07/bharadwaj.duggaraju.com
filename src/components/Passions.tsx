@@ -6,7 +6,7 @@ import PassionsContent from '../content/passions';
 const PassionsWrapper = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: ${props => props.theme.spacing.between};;
     flex-direction: column;
     width: 80%;
     margin-right: auto;

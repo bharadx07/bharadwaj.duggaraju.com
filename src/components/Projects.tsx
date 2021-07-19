@@ -5,7 +5,7 @@ import { TopProjects } from '../content/projects';
 const ProjectsWrapper = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: ${props => props.theme.spacing.between};;
     flex-direction: column;
     width: 100%;
     margin-right: auto;

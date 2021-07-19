@@ -10,6 +10,10 @@ const ContactWrapper = styled.div`
     @media (max-width: 1022px) {
         display: none;
     }
+
+    @media (max-height: 422px) {
+        display: none;
+    }
 `
 
 const Socials = styled.div`

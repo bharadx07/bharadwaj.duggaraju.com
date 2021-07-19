@@ -5,7 +5,7 @@ import styled from "styled-components"
 const FooterWrapper = styled.footer`
     width: 100%;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: ${props => props.theme.spacing.smbetween};;
     margin-bottom: 1rem;
     color: white;
     padding: 0 1rem;
@@ -23,6 +23,10 @@ const IconsOnSmall = styled.div`
      display: none;
 
      @media (max-width: 1022px) {
+        display: block;
+    }
+
+    @media (max-height: 422px) {
         display: block;
     }
 `
