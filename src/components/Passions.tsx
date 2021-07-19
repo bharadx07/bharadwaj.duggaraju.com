@@ -18,6 +18,10 @@ const PassionsWrapper = styled.div`
         width: 100%;
         padding: 0 .5rem;
     }
+
+       @media (max-width: 600px) {
+        margin-top: 10vh;
+    }
     
 `
 
@@ -65,6 +69,7 @@ const TopicButton = styled.button<{filled: boolean}>`
     font-weight: ${props => props.filled ? 'bold' : 'normal'};
     cursor: pointer;
     font-size: .9rem;
+    font-family: inherit;
 `
 
 const ContentWrapper = styled.p`

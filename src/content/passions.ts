@@ -4,7 +4,7 @@ const PassionsContent = {
         "Through my learning, I have created many impactful projects and fun showcases. I have created projects ranging from <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://bdvideos.glitch.me`'>YouTube Clones</span> to <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://jagathifoundation.org`'>Nonprofit Websites</span>. I hope to make an impact through my programming."
     ],
     Volunteering: [
-        "Volunteering is one of my strongest pastimes as it allows me to impact the lives of others. I love helping those who need it and putting a smile on peoples faces, it makes my day.",
+        "Volunteering is one of my strongest pastimes, as it allows me to impact the lives of others. I love helping people who need it and putting a smile on people's faces. It makes my day.",
         "Along with serving food and resources to help those, I strive to use my programming skills to help. I teach programming through <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://roboticsforall.us`'>RFA</span>, work on the <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://github.com/bharadwajduggaraju/JF-Nonprofit`'>Jagathi Foundation NP</span> and start <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://bellevuefooddrive.glitch.me`'>Food Drives</span> in my neighborhood."
     ],
     Cubing: [

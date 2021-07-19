@@ -105,7 +105,7 @@ const Intro: React.FC = () => {
             <div style={{marginLeft: "2rem"}}>
             <HeyWrapper>Hey!</HeyWrapper>
             <Name>I'm <span>Bharadwaj Duggaraju.</span></Name>
-            <AboutDesc>A passionate student developer who enjoys making impactful projects on the web, mobile and real-life.</AboutDesc>
+            <AboutDesc>A passionate student developer who enjoys making impactful projects on the web, mobile and in real-life.</AboutDesc>
             <ContactButton href="#contact">Contact Me</ContactButton>
             </div>
         </CenterWrapper>
