@@ -50,6 +50,7 @@ const ProjectItem = styled.div<{sided: boolean}>`
     min-height: 160px;
     min-width: 240px;
 
+
     @media (max-width: 720px) {
         ${props => props.sided ? css`margin-left: 1rem;` : css`margin-right: 1rem;`}
     }
