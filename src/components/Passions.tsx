@@ -115,6 +115,7 @@ const TopicSelect = styled.select`
     padding: .5rem 2rem;
     text-align: center;
     
+    
 
     @media (min-width: 600px) {
         display: none;

@@ -12,10 +12,11 @@ const AboutWrapper = styled.div`
     align-items: center;
     min-width: 700px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 716px) {
         flex-direction: column;
         min-width: 100%;
-        margin-top: 13rem;
+        margin-top: 13vh;
+
 
 
     

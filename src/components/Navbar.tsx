@@ -50,7 +50,7 @@ const Nav = styled.nav`
     margin: 0 auto;
     position: fixed;
     z-index: 100;
-    top: -100vh;
+    top: -375vh;
     height: 100vh;
     padding: 5rem;
     text-align: center;
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
           s(".nav").style = "animation: diagonal 400ms linear; top: 0;";
         });
         menuclose.addEventListener("click", (e: Event) => {
-          s(".nav").style = "animation: backdiagonal 400ms linear; top: -100vh;";
+          s(".nav").style = "animation: backdiagonal 400ms linear; top: -375vh;";
         });
       }, []);
     
@@ -157,7 +157,7 @@ const Navbar: React.FC = () => {
 
             </NavBrand>
             <MenuIcon className="icon ion-md-menu menuicon"></MenuIcon>
-            <Nav className="nav animate__animated animate__fadeInDown">
+                        <Nav className="nav animate__animated animate__fadeInDown">
               <CloseIcon className="icon ion-md-close closeicon"></CloseIcon>
               <NavLink className="nav-link" href="#about">
                 <span>01.</span><BR /> About

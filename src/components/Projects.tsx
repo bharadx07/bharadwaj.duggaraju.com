@@ -26,6 +26,7 @@ const ProjectsName = styled.h3`
     
     @media (max-width: 500px) {
         font-size: 1.6rem;
+
     }
 `
 
@@ -34,9 +35,13 @@ const ProjectItemsWrapper = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 1.1rem;
   margin-top: 2rem;
+ 
 
   @media (max-width: 300px) {
       place-items: center;
+      width: 100%;
+    
+      
   }
   
  
@@ -59,6 +64,7 @@ const ProjectItem = styled.div<{sided: boolean}>`
         margin: 0 2rem;
         
     }
+
 
 
 
