@@ -20,8 +20,8 @@ export const TopProjects: Project[] = [
     },
     {
         webLink: null,
-        githubLink: "https://github.com/bharadwajduggaraju/eight-servers",
-        title: "Eight Servers",
+        githubLink: "https://github.com/bharadwajduggaraju/seven-servers",
+        title: "Seven Servers",
         desc: "A suite of backends created for the sole purpose of testing different programming languages.",
         tech: ["React", "Node.js", "C#"]
     },
