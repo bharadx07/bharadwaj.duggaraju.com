@@ -14,7 +14,7 @@ const CenterWrapper = styled.div`
 `
 
 const HeyWrapper = styled.h5`
-    font-size: 27px;
+    font-size: 25.5px;
     color: #EF9D10;
     font-weight: normal;
 
@@ -41,10 +41,10 @@ const Name = styled.h1`
     }
 
     @media (max-width: 638px) {
-        font-size: 7vw;
+        font-size: 7.4vw;
     }
 
-    @media (max-width: 498px) {
+    @media (max-width: 495px) {
         font-size: 40px;
     }
 
@@ -65,11 +65,12 @@ const AboutDesc = styled.p`
     color: #6B7B8C;
     font-size: 1.5rem;
     font-weight: bold;
-    width: 60%;
+    width: 65%;
     padding: 0 0 2.8rem 0;
 
     @media (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        width: 70%;
     }
 
     @media (max-width: 375px) {
