@@ -41,7 +41,7 @@ const Name = styled.h1`
     }
 
     @media (max-width: 638px) {
-        font-size: 7.4vw;
+        font-size: 7.2vw;
     }
 
     @media (max-width: 495px) {
