@@ -1,7 +1,7 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 import { TopProjects } from '../content/projects';
-
+ 
 const ProjectsWrapper = styled.div`
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ const ProjectsName = styled.h3`
 const ProjectItemsWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  grid-gap: 1.1rem;
+  row-gap: 1.1rem;
   margin-top: 2rem;
  
 
@@ -43,6 +43,8 @@ const ProjectItemsWrapper = styled.section`
     
       
   }
+
+  
   
  
 `
@@ -54,18 +56,17 @@ const ProjectItem = styled.div<{sided: boolean}>`
     color: white;
     min-height: 160px;
     min-width: 240px;
+    margin: 0 .5rem;
 
 
-    @media (max-width: 720px) {
-        ${props => props.sided ? css`margin-left: 1rem;` : css`margin-right: 1rem;`}
+
+    @media(max-width: 750px) {
+        margin: 0 .7rem;
     }
 
-    @media (max-width: 592px) {
+    @media(max-width: 575px) {
         margin: 0 2rem;
-        
     }
-
-
 
 
 
@@ -96,13 +97,13 @@ const ProjectItem = styled.div<{sided: boolean}>`
     
     h1 {
             padding: 0 1rem;
-            font-size: 1.5rem;
+            font-size: 23.4px;
         }
 
     p {
         padding: .6rem 1rem;
         padding-bottom:1rem ;
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     cursor: pointer;
