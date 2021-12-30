@@ -1,6 +1,6 @@
 const PassionsContent = {
   Programming: [
-    "My passion for programming started in 2016 through Scratch. Since then, I have learned Python, Javascript, Java, CSS, HTML, React, Typescript and more. I strive to learn and expand my skills.",
+    "My passion for programming started in 2016 through Scratch. Since then, I have learned Python, Javascript, Java, CSS, HTML, React, Typescript and more. I strive to learn and expand my skills through <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://www.worldcubeassociation.org/persons/2017DUGG01`'>Open Source</span> and Competitive Programming.",
     "Through my learning, I have created many impactful projects and fun showcases. I have created projects ranging from <span style='color: orange; cursor: pointer;' onclick='window.location.href=`https://bdvideos.glitch.me`'>YouTube Clones</span> to <span style='color: orange; cursor: pointer;' onclick='window.location.href=`http://jagathifoundation.org`'>Nonprofit Websites</span>. I hope to make an impact through my programming.",
   ],
   Robotics: [

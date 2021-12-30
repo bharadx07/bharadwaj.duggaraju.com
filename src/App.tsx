@@ -1,5 +1,5 @@
 import React from 'react';
-//Componenent Imports
+//Component Imports
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
