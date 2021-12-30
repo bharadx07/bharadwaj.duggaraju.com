@@ -141,7 +141,7 @@ const Projects: React.FC = () => {
             <ProjectItemsWrapper>
                 {TopProjects.map((project, ind) => {
                     return (
-                        <ProjectItem key={ind} {...project.webLink && {onClick: () => window.location.href = project.webLink as string}} sided={ind%2 === 0}>
+                        <ProjectItem key={ind} sided={ind%2 === 0}>
                             <div>
                             <i className="fas fa-project-diagram"></i>
                                 <div>
@@ -150,13 +150,12 @@ const Projects: React.FC = () => {
                                 </div>
                             </div>
                             <h1>{project.title}.</h1>
-                                <p>{project.desc}</p>
-                             {/* <section>{project.tech.map(p => <div>{p}</div>)}</section> */}
+                            <p>{project.desc}</p>
                         </ProjectItem>
                     )
                 })}
             </ProjectItemsWrapper>
-            <AllPButton onClick={() => window.location.href = "https://github.com/bharadwajduggaraju"}>All Projects</AllPButton>
+            <AllPButton onClick={() => window.location.href = "https://github.com/bharadwajduggaraju?tab=repositories"}>All Projects</AllPButton>
         </ProjectsWrapper>
     )
 }

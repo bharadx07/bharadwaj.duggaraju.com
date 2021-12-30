@@ -40,19 +40,17 @@ export const TopProjects: Project[] = [
         tech: ["Python", "MongoDB", "PyJWT"]
     },
     {
-        webLink: "http://bdvideos.glitch.me",
-        githubLink: "https://github.com/bharadwajduggaraju/bdvideos",
-        title: "BD Videos",
-        desc: "Video Watching Site Based on Youtube.",
-        tech: ["HTML", "CSS", "Javascript"]
+        webLink: "http://jagathifoundation.org",
+        githubLink: "https://github.com/bharadwajduggaraju/jf",
+        title: "Jagathi Foundation",
+        desc: "Website for a Nonprofit serving the needy in India.",
+        tech: ["Strapi", "Typescript", "React"]
     },
     {
-        webLink: "http://bdsounds.glitch.me",
-        githubLink: "https://github.com/bharadwajduggaraju/bdsounds",
-        title: "BD Sounds",
-        desc: "Music Site testing HTML Forms.",
-        tech: ["HTML", "CSS", "Javascript"]
-    }
-    
-    
+        webLink: "https://bharadwaj.duggaraju.com",
+        githubLink: "https://github.com/bharadwajduggaraju/bharadwaj.duggaraju.com",
+        title: "My Personal Website",
+        desc: "My personal website, made with React and Typescript.",
+        tech: ["Styled Components", "Typescript", "React"]
+    },
 ]
