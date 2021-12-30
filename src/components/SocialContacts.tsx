@@ -31,15 +31,15 @@ const Socials = styled.div`
 
 
 `
+ 
 
 
-
-const SocialContacts = () => {
+const SocialContacts: React.FC = () => {
     return (
         <ContactWrapper className="animate__animated animate__fadeInLeft">
             <Socials>
             <i className="fab fa-github" onClick={() => window.location.href="https://github.com/bharadwajduggaraju"}></i>
-            <i className="fab fa-facebook" onClick={() => window.location.href="https://facebook.com/bharadwajduggaraju"}></i>
+            <i className="fab fa-linkedin" onClick={() => window.location.href="https://www.linkedin.com/in/bharadwajduggaraju/"}></i>
             <i className="fab fa-instagram" style={{marginBottom: "1.9rem"}} onClick={() => window.location.href="https://instagram.com/bharadwaj_duggaraju"}></i>
             <div title="Jump to top." style={{cursor: "pointer"}}>{"⬆"}</div>
             {[0,1,2,3].map((_, ind: number) => (<i className="fas fa-grip-lines-vertical" title="Jump to top." style={{margin: "0"}} key={ind} onClick={() => window.location.href = "#"}></i>))} 
