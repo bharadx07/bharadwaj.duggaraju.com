@@ -44,7 +44,7 @@ const Nav = styled.nav`
   margin: 1.5rem 0;
   margin-right: 1rem;
 
-  @media (max-width: 890px) {
+  @media (max-width: 1012px) {
     flex-direction: column;
     background-color: #586b81;
     margin: 0 auto;
@@ -79,7 +79,7 @@ const CloseIcon = styled.i`
   top: 0.5rem;
   display: none;
 
-  @media (max-width: 890px) {
+  @media (max-width: 1012px) {
       display: block;
   }
 `
@@ -92,7 +92,7 @@ const MenuIcon = styled.i`
   margin-right: 1rem;
   cursor: pointer;
 
-  @media (max-width: 890px) {
+  @media (max-width: 1012px) {
       display: block;
   }
 
@@ -116,7 +116,7 @@ const NavLink = styled.a`
   }
 
   
-  @media (max-width: 890px) {
+  @media (max-width: 1012px) {
       margin: .5rem 0;
       padding: 0;
       
@@ -170,6 +170,9 @@ const Navbar: React.FC = () => {
               </NavLink>
               <NavLink className="nav-link" href="#contact">
                 <span>04.</span><BR /> Contact
+              </NavLink>
+              <NavLink className="nav-link" href="resume.pdf">
+                <span>05.</span><BR /> Resume
               </NavLink>
             </Nav>
         </NavWrapper>
